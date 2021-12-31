@@ -1,0 +1,6 @@
+<h1>Liste des points d'intérêt</h1>
+<ul>
+<% @points.each do |point| %>
+<li><%= point.name %> <%= point.address %> <%= link_to "edit", edit_point_path(point), class: "btn" %></li>
+<% end %>
+</ul>
